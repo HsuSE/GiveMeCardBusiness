@@ -305,7 +305,7 @@
 
 	var loaddatatime = function() {
 		var Today = new Date();
-		Today_date = Today.getFullYear()+"年"+(Today.getMonth()+1)+"月"+Today.getDate()+"日";
+		Today_date = Today.getFullYear()+"年0"+(Today.getMonth()+1)+"月"+Today.getDate()+"日";
 		var dbTimeRef = dbroot.child('EnterpriseDB').child('麥味登').child("record");
 		dbTimeRef.on('value',function(snapshot) {
 			var cardtime_temp = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -329,7 +329,7 @@
 		var dbgenderRef = dbroot.child('EnterpriseDB').child('麥味登').child('record');
 		dbgenderRef.on('value',function(snapshot) {
 			var Today = new Date();
-			Today_date = Today.getFullYear()+"年"+(Today.getMonth()+1)+"月"+Today.getDate()+"日";
+			Today_date = Today.getFullYear()+"年0"+(Today.getMonth()+1)+"月"+Today.getDate()+"日";
 			var GenderData = snapshot.val();
 			cardgender[0] = GenderData[Today_date]["gender"]["男"];
 			cardgender[1] = GenderData[Today_date]["gender"]["女"];
