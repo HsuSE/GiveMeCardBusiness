@@ -1,0 +1,21 @@
+body {
+	background:white;
+	/*padding: 0px;*/
+	margin: 0px;
+}
+
+div {
+	height: 100vh;
+}
+
+#Homepage {
+	background: red;
+}
+
+#page2 {
+	background: blue;
+}
+
+#page3 {
+	background: green;
+}

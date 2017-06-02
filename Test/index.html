@@ -2,41 +2,24 @@
 <html>
 <head>
 	<title>Travels</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="./js/jquery-3.0.0.min.js"></script>
+
 </head>
 <body>
-<style type="text/css">
-#Box2,#Box3,#Box4{
-    width:200px;
-    height:100px;
-    padding:10px;
-    border:1px #ccc dashed;
-    float:left;
-    margin-right:10px;
-}
-#Img2 {
-	text-align: center;
-	width: 100px;
-	height: 100px;
-}
-</style>
-<script type="text/javascript">
-function AllowDrop(event){
-    event.preventDefault();
-}
-function Drag(event){
-    event.dataTransfer.setData("text",event.currentTarget.id);
-}
-function Drop(event){
-    event.preventDefault();
-    var data=event.dataTransfer.getData("text");
-    event.currentTarget.appendChild(document.getElementById(data));
-}
-</script>
-<div id="Box2" ondrop="Drop(event)" ondragover="AllowDrop(event)">
-    <img id="Img2" src="http://lh4.ggpht.com/GPwy5xXALyUSQTW_N6XUEXvRjtwc7Q_d8VNquNCEqUfl7ZP2Z_H07cbCf-XRpXXkcXA" draggable="true" ondragstart="Drag(event)">
-</div>
-<div id="Box3" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-<div id="Box4" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
-<div style="clear:both;"></div>
+	<div id='Homepage'>
+		<a class="NextPage">下一頁</a>
+	</div>
+	
+	<div id='page2'>
+		<a class="PrePage">上一頁</a>
+		<a class="NextPage">下一頁</a>
+	</div>
+
+	<div id='page3'>
+		<a class="PrePage">上一頁</a>
+	</div>
+	<script type="text/javascript" src="./js/action.js"></script>
 </body>
+
 </html>
