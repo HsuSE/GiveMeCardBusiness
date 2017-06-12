@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Travels</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>計算機</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!-- <script type="text/javascript" src="http://mis2.nkmu.edu.tw/1021241145/gishomework/js/jquery.min.js"></script> -->
 	<script type="text/javascript" src="./js/jquery-3.0.0.min.js"></script>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-</head>
-<body>
-	<div id='Homepage'>
-		<a class="NextPage">下一頁</a>
-	</div>
-	
-	<div id='page2'>
-		<a class="PrePage">上一頁</a>
-		<a class="NextPage">下一頁</a>
-	</div>
-
-	<div id='page3'>
-		<a class="PrePage">上一頁</a>
-	</div>
 	<script type="text/javascript" src="./js/action.js"></script>
-</body>
+</head>
+<body onselectstart="return false">
+ <div id="container" style="width: 320px; height: 560px; position: fixed;">
+ 	<div id="printer">
+ 	 <div id="terminal">
+ 	 	0
+ 	 </div>
+ 	</div>
+ 	<div id="button_container">
+ 		<div class="button_container_row">
+ 			<div id="clear" class="button darker">AC</div>
+ 			<div id="PN" class="button darker"><img src="./i.png" style="height: 40px; width: 40px;"></div>
+ 			<div id="percent" class="button darker">%</div>
+ 			<div id="Division" class="operator button">÷</div>
+ 		</div>
 
+ 		<div class="button_container_row">
+ 			<div id="Num_7" class="button">7</div>
+ 			<div id="Num_8" class="button">8</div>
+ 			<div id="Num_9" class="button">9</div>
+ 			<div id="Multiply" class="operator button">×</div>
+ 		</div>
+
+ 		<div class="button_container_row">
+ 			<div id="Num_4" class="button">4</div>
+ 			<div id="Num_5" class="button">5</div>
+ 			<div id="Num_6" class="button">6</div>
+ 			<div id="Subtraction" class="operator button">-</div>
+ 		</div>
+
+ 		<div class="button_container_row">
+ 			<div id="Num_1" class="button">1</div>
+ 			<div id="Num_2" class="button">2</div>
+ 			<div id="Num_3" class="button">3</div>
+ 			<div id="Addition" class="operator button">+</div>
+ 		</div>
+
+ 		<div class="button_container_row">
+ 			<div id="Num_0" class="button">0</div>
+ 			<div id="Decimal" class="button">.</div>
+ 			<div id="Equal" class="operator button">=</div>
+ 		</div>
+ 	</div>
+ </div>
+</body>
 </html>

@@ -1,0 +1,30 @@
+body {
+	background:white;
+	/*padding: 10px;*/
+	margin: 0px;
+}
+
+a {
+	height: 10%;
+	width: 20%;
+	padding: 10px;
+	margin: 15px;
+	background: #a0a0a0;
+}
+
+div {
+	padding: 20px;
+	height: 100vh;
+}
+
+#Homepage {
+	background: red;
+}
+
+#page2 {
+	background: blue;
+}
+
+#page3 {
+	background: green;
+}
